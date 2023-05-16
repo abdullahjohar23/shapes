@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MID EXAM</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- main section start here-->
+    <main class="design">
+        <!-- code for Making card starts here -->
+        <section class="task container"> 
+            <h2 class="title">Area Calculator</h2>
+            
+        <div class="des">
+
+            <!-- triangle -->
+            <div class="card single_btn" style=" margin: 20px; background-color: rgb(111, 208, 208);">
+                <div class="single_btn single_card">
+                    <div class="card-top"> <img style="width: 60%" src="./triangle.png"/> </div>
+
+                    <div class="card-body">
+                        <h3>Triangle</h3>
+                        <p style="color:grey;"><b>Area(A) = 0.5 x B x H</b></p>
+                    </div>
+
+                    <div style="display: flex; gap: 20px; margin: 20px;">
+                        <div style = "display: flex; text-align: center;">
+                            <p>b(cm)</p>
+                            <input class="infiled" type="text" id="value_of_b_triangle" value="0">
+                        </div>
+                        <div style="display: flex;">
+                            <p>h(cm)</p>
+                            <input class="infiled" type="text" id="value_of_h_triangle" value="0">
+                        </div>
+                    </div>
+                    <button class="card-footer" onclick="area_of_triangle()">Generate Area</button>
+                </div>
+
+
+                
+                <!-- rectangle -->
+                <div class="single_btn single_card" style="background-color: rgb(188, 240, 240);">
+                    <div class="card-top">
+                        <img style="width: 60%" src="./rectangle.png"/>
+                    </div>
+                    <div class="card-body" style="padding: 48px;">
+                        <h3>RECTANGLE</h3>
+                        <p style="color:grey;"><b>Area(A) = W x I</b></p>
+                    </div>
+                    <div style="display: flex;gap: 20px; margin: 20px;">
+                        <div style="display: flex;">
+                            <p>b(cm)</p>
+                            <input class="infiled" type="text" id="value_of_b_rectangle" value="0">
+                        </div>
+                        <div style="display: flex;">
+                            <p>l(cm)</p>
+                            <input class="infiled" type="text" id="value_of_l_rectangle" value="0">
+                        </div>
+                    </div>
+                    <button class="card-footer" onclick="area_of_rectangle()">Generate Area</button>
+                </div>
+
+
+
+                <!-- pentagon -->
+                <div class="single_btn single_card" style="background-color: rgb(111, 208, 208);;">
+                    <div class="card-top"><img style="width: 40%" src="./pentagon.png"/></div>
+                    
+                    <div class="card-body" style="padding: 48px;">
+                        <h3>PENTAGON</h3>
+                        <p style="color:grey;">Area(A) = 0.5 x p x b</p>
+                    </div>
+                    <div style="display: flex; gap: 20px; margin: 20px;">
+                        <div style="display: flex;">
+                            <p>p(cm)</p>
+                            <input class="infiled" style="width:100%;" type="text" id="value_of_b_pentagon" value="0">
+                        </div>
+                        <div style="display: flex;">
+                            <p>b(cm)</p>
+                            <input class="infiled" style="width:100%;" type="text" id="value_of_l_pentagon" value="0">
+                        </div>
+                    </div>
+                    <button class="card-footer" onclick="area_of_pentagon()">Generate Area</button>
+                </div>
+            </div>
+
+
+
+
+
+                <div class="single_btn single_card">
+                    <!-- Output-->
+                    <div class="card-top">
+                        <p>Area Calculation</p>
+                        <ul id = "ans"></ul>
+                    </div>
+                    <div class="card-body" style="padding: 60px;">
+                        <div class="box">
+                            <h1 style="color: black;" class="header_style" id="Show_result">0</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"> </script>
+</body>
+</html>
